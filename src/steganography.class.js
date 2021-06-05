@@ -22,9 +22,11 @@ class Steganography{
 	 * @return {Buffer}
 	 */
 	static write(s,type,message,key){
-		let buffer = this.getBufferFromParam(s);
-		let cipher = security.encrypt(message,key);
-		return Buffer.concat([buffer,Buffer.from(cipher)]);
+		if (s) {
+			let buffer = this.getBufferFromParam(s);
+			let cipher = security.encrypt(message, key);
+			return Buffer.concat([buffer, Buffer.from(cipher)]);
+		}
 	}
 	/**
 	 * @param {string|Array} s File Path Or Bytes Array
