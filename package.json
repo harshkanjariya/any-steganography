@@ -1,6 +1,6 @@
 {
   "name": "any-steganography",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Steganography can be done in any type of file",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,11 @@
     "security",
     "encrypt",
     "descrypt",
-    "cipher"
+    "cipher",
+    "hide",
+    "message",
+    "image",
+    "pdf"
   ],
   "author": "Harsh Kanjariya",
   "license": "ISC",
