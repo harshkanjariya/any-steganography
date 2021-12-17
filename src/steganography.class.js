@@ -41,11 +41,11 @@ class Steganography{
 	
 		let str;
 		if (type === 'jpg' || type === 'jpeg') {
-			for (let i=buf.length-1;i>=0; i--){
-				if (buf[i] === 0xd9 && buf[i-1] === 0xff){
+			for (let i=buffer.length-1;i>=0; i--){
+				if (buffer[i] === 0xd9 && buffer[i-1] === 0xff){
 					break;
 				}
-				data.push(buf[i]);
+				data.push(buffer[i]);
 			}
 			data.reverse();
 			buffer = Buffer.from(data);
