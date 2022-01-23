@@ -1,3 +1,3 @@
-const Steganography = require('./src/steganography.class');
+const Steganography = require('./dist/steganography.class');
 
 module.exports = Steganography;
