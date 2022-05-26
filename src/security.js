@@ -56,8 +56,8 @@ exports.getKeyFromPassword = getKeyFromPassword = (password) => {
 
 /**
  *
- * @param {Buffer} messagetext - The clear text message to be encrypted
- * @param {Buffer} key - The key to be used for encryption
+ * @param messagetext - The clear text message to be encrypted
+ * @param key - The key to be used for encryption
  *
  * The caller of this function has the responsibility to clear
  * the Buffer after the encryption to prevent the message text
@@ -75,8 +75,8 @@ const encrypt = (messagetext, key) => {
 
 /**
  *
- * @param {Buffer} ciphertext - Cipher text
- * @param {Buffer} key - The key to be used for decryption
+ * @param ciphertext - Cipher text
+ * @param key - The key to be used for decryption
  *
  * The caller of this function has the responsibility to clear
  * the Buffer after the decryption to prevent the message text
