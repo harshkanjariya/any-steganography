@@ -5,9 +5,14 @@
 		"target": "es6",
 		"moduleResolution": "node",
 		"sourceMap": true,
-		"outDir": "dist"
+		"outDir": "dist",
+		"baseUrl": "src",
+		"allowJs": true
 	},
 	"compileOnSave": true,
+	"include": [
+	    "./src/**/*"
+	],
 	"exclude": [
 		"node_modules"
 	],
