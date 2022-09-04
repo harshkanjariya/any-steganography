@@ -22,7 +22,7 @@ const output = path.join(__dirname, 'images', 'test-with-message.jpg');
 _first: read file_
 
 ```javascript
-const key = '<encryption key with length 128>';
+const key = '<encryption key with length of 256 bits>';
 const buffer = sg.write(file, 'message', key);
 fs.writeFile(output, buffer, (err) => {
 	if (err) {
